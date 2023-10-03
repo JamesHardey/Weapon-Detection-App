@@ -39,7 +39,7 @@ def main():
             st.image(detected_image, channels="BGR", caption="Object Detection Result")
 
     elif detection_mode == "Video":
-        # uploaded_file = st.file_uploader("Choose a video file", type=["mp4", "avi", "mov"])
+        uploaded_file = st.file_uploader("Choose a video file", type=["mp4", "avi", "mov"])
 
         # if uploaded_file is not None:
         #     temp_file = tempfile.NamedTemporaryFile(delete=False)
