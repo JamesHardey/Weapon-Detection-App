@@ -1,6 +1,6 @@
 import streamlit as st
 from ultralytics import YOLO
-import cv2
+# import cv2
 import numpy as np
 import tempfile
 
@@ -31,12 +31,12 @@ def main():
             temp_file.close()
 
             # Read the uploaded image using OpenCV
-            image = cv2.imread(temp_file.name)
+            # image = cv2.imread(temp_file.name)
 
             # Perform object detection on the image
-            detected_image = detect_objects(image)
+            # detected_image = detect_objects(image)
 
-            st.image(detected_image, channels="BGR", caption="Object Detection Result")
+            # st.image(detected_image, channels="BGR", caption="Object Detection Result")
 
     elif detection_mode == "Video":
         uploaded_file = st.file_uploader("Choose a video file", type=["mp4", "avi", "mov"])
