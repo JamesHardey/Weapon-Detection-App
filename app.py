@@ -1,18 +1,18 @@
 import streamlit as st
-from ultralytics import YOLO
+# from ultralytics import YOLO
 # import cv2
 import numpy as np
 import tempfile
 
-def load_yolo(model_path):
-    model = YOLO(model_path)
-    return model
+# def load_yolo(model_path):
+#     model = YOLO(model_path)
+#     return model
 
-def detect_objects(frame):
-    model = load_yolo("weights/best.pt")
-    res = model.predict(frame, conf=0.5)
-    res_plotted = res[0].plot()
-    return res_plotted
+# def detect_objects(frame):
+#     model = load_yolo("weights/best.pt")
+#     res = model.predict(frame, conf=0.5)
+#     res_plotted = res[0].plot()
+#     return res_plotted
 
 
 
