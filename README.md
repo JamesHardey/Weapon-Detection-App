@@ -83,11 +83,11 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Contributors
 
-- Your Name <jamesade646@gmail.com>
+- James Hardey <jamesade646@gmail.com>
 - Additional contributors can be added here.
 
 ## Support
 
-If you have any questions or need assistance, please create an issue or contact us at your-email@example.com.
+If you have any questions or need assistance, please create an issue or contact us at jamesade646@gmail.com.
 
 **Enjoy detecting weapons with our Weapon Detection System!**
