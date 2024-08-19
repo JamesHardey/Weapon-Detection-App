@@ -17,9 +17,9 @@ def detect_objects(frame):
 
 
 def main():
-    st.title("Weapon Detection System")
+    st.title("Weapon Identification System")
 
-    detection_mode = st.radio("Select detection mode:", ["Image", "Video"])
+    detection_mode = st.radio("Select identification mode:", ["Image", "Video"])
 
     if detection_mode == "Image":
         uploaded_file = st.file_uploader("Choose an image file", type=["jpg", "png"])
@@ -36,7 +36,7 @@ def main():
             # Perform object detection on the image
             detected_image = detect_objects(image)
 
-            st.image(detected_image, channels="BGR", caption="Object Detection Result")
+            st.image(detected_image, channels="BGR", caption="Object Identification Result")
 
     elif detection_mode == "Video":
         uploaded_file = st.file_uploader("Choose a video file", type=["mp4", "avi", "mov"])
@@ -72,7 +72,7 @@ def main():
 
             video.release()
             out.release()
-            st.success("Object detection complete!")
+            st.success("Object identification complete!")
 
             # Display the processed output video
             st.video(output_file)
